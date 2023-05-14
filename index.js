@@ -1,7 +1,6 @@
-import xhr2 from 'xhr2';
-import nodeWindowPolyfill from 'node-window-polyfill';
+import './register/navigator';
+import './register/storage';
+import './register/xhr';
 
-nodeWindowPolyfill.register();
-
-global.sessionStorage = global.localStorage;
-global.XMLHttpRequest = xhr2;
+// delay register window
+import './register/window';
