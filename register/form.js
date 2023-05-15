@@ -1,3 +1,3 @@
-import { FormData } from 'formdata-node/lib';
+import { FormData } from 'formdata-node';
 
 global.FormData = FormData;
