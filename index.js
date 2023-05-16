@@ -1,8 +1,8 @@
-import './register/form';
-import './register/location';
-import './register/navigator';
-import './register/storage';
-import './register/xhr';
+import './register/form.js';
+import './register/location.js';
+import './register/navigator.js';
+import './register/storage.js';
+import './register/xhr.js';
 
 // delay register window
-import './register/window';
+import './register/window.js';

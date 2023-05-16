@@ -1,19 +1,21 @@
-const engine = 'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.35'
-const appVersion = `5.0 (Windows NT 10.0; Win64; x64) ${engine}`
+import os from 'os';
+
+const engine = `node.js/${process.versions.node} v8/${process.versions.v8}`;
+const appVersion = `5.0 (${os.type()} ${os.arch()}) ${engine}`;
 
 global.navigator = {
     appCodeName: 'Mozilla',
-    appName: 'Netscape',
+    appName: process.release.name,
     appVersion: appVersion,
     cookieEnabled: false,
     language: 'zh-CN',
     mimeTypes: [],
     onLine: true,
-    platform: 'Win32',
+    platform: process.platform,
     plugins: [],
-    product: 'Gecko',
+    product: process.release.lts,
     productSub: '20030107',
     userAgent: `Mozilla/${appVersion}`,
-    vendor: 'Google Inc.',
+    vendor: 'OpenJS Foundation',
     vendorSub: '',
-}
+};

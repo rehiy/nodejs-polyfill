@@ -6,4 +6,4 @@ global.location = {
     origin: '',
     assign: function () { },
     reload: function () { },
-}
+};
