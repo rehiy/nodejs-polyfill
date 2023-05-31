@@ -4,6 +4,10 @@ global.location = {
     pathname: '',
     port: '',
     origin: '',
-    assign: function () { },
-    reload: function () { },
+    assign: function () {
+        console.log('location.assign', arguments);
+    },
+    reload: function () {
+        console.log('location.reload', arguments);
+    },
 };
