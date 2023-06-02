@@ -19,6 +19,10 @@ class FileStorage {
     }
 }
 
+if (global._now === undefined) {
+    global._now = () => (new Date()).getTime();
+}
+
 if (global.localStorage === undefined) {
     global.localStorage = new FileStorage(env.CACHE_DIR + '/local.json');
 }
