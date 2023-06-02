@@ -6,7 +6,9 @@
                 "node": true
             },
             "files": [
-                "**/*.js"
+                "env.js",
+                "index.js",
+                "register/*.js"
             ],
             "extends": [
                 "eslint:recommended",
